@@ -1,172 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-    <style>
-        * {box-sizing: border-box;}
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: snow;
-            background-size: cover;
-            height: 100%;
-            padding: 0;
-        }
-
-        .footer {
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            color: black;
-            text-align: center;
-        }
-        @media screen and (max-width: 650px) {
-            .nav, .jumbotron, .footer, .container {
-                width: 100%;
-                display: block;
-                flex-direction: column;
-            }
-        }
-
-        .hero-text {
-            text-align: center;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-
-        .hero-image {
-            background-image: url("https://1e8q3q16vyc81g8l3h3md6q5f5e-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/Meaningful-Connectivity.jpg");
-            width: 100%;
-            height: 400px;
-            background-position: center;
-            background-size: cover;
-
-        }
-.al{
-    display: flex;
-    justify-content: center;
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.button{
-
-    height: 100%;
-    position: relative;
-
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.center{
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 30%;
-
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-        .image {
-            width: 50%;
-            height: auto;
 
-        }
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-        .para1 {
-            position: relative;
-            display: grid;
-            text-align: center;
-        }
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.hero-image {
+  background-image: url("https://minori.com.vn/static/image-9.jpg");
+  width: 100%;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+}
 
-        .para0 {
-            position: relative;
-            display: grid;
-            text-align: center;
-        }
-    </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Internet history</title>
+</style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">The History of Internet</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li  class="active"><a href="index.html">Home</a></li>
-            <li><a href="internet_search.html">Internet Search</a></li>
-            <li><a href="dotcom_bubble.html">Dot Com Bubble</a></li>
-            <li><a href="browser_wars.html">Browser Wars</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Project Two<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="Pylint_and_OOP.html">Pylint and OOP</a></li>
-                    <li><a href="aaa_testing.html">AAA Testing Tutorial</a></li>
-                    <li><a href="oop_principles.html">Object Oriented Programming Explained!</a></li>
-                    <li><a href="oop_solid_design.html">SOLID - Object Oriented Design</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
+
+<div class="topnav">
+  <a class="active" href="#home">API Testing</a>
+  <a href="#">Team</a>
+</div>
 
 <div class="hero-image">
-    <div class="hero-text">
-        <h1 style="font-size:50px">The Invention of the Internet</h1>
-        <p style="font-size:30px">Internet is one of the most important human inventions in the history of Mankind<br>
-            No invention in history has grown so fast to touch so many lives</p>
-
-    </div>
-</div>
-<br>
-<div class="para0">
-    <h2>Who Invented the Internet?</h2>
-    <p style="font-size:23px">
-        No single person or entity can be credited with the invention of Internet, i.e. the internet as we know it
-        today- containing browser windows, websites, URLs, and search bars.
-    </p>
-</div>
-<br>
-<div class="al">
-    <img class="image" src="https://www.dignited.com/wp-content/uploads/2019/05/internet-graphic-1024x576.jpg" alt="IOT">
 </div>
 <br><br>
-<div class="para1">
-    <p style="font-size:23px">
-        The building of the World Wide Web started as early as the 1960s when the application for time-sharing
-        was first patented
-    </p>
-</div>
-
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="input.." name="input">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 <br>
-
-<div class="button">
-    <div class="center">
-        <a class="btn btn-primary btn-block active" href="internet_search.html" role="button">Learn More</a>
-
-    </div>
-
-</div>
-
-</body>
-</html>
-<br><br><br>
-
 <div class="footer">
-
-    <p> <a href="https://validator.w3.org/">W3C Validator</a><br>
-       Copy Right &copy;<a href="#">Christopher</a>
-        <a href="#">Pooja</a>
+    <p>Copy right &copy;<a href="#">Christopher</a>
+      <a href="#">Erica</a>
+      <a href="https://github.com/pkb94/history-of-internet">Pooja</a>
+      <a href="#">Preyasha</a>
     </p>
 </div>
 
